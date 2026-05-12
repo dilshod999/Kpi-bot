@@ -14,7 +14,9 @@ from telegram.ext import (
 )
 
 # ───────────────────────────────────────────────
-TOKEN = "СЮДА_ВСТАВЬ_ТОКЕН_БОТА"          # получи у @BotFather
+import os  
+TOKEN = os.environ.get("TOKEN", "")
+# получи у @BotFather
 DATA_FILE = "kpi_data.json"
 MY_NAME = "Маметниязов Дилшод"
 PRICE_PER_CARD = 800                       # сумм за одну карту
